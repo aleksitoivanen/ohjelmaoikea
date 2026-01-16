@@ -1,0 +1,8 @@
+kanta=input("syötä kanta: ")
+korkeus=input("syötä korkeus: ")
+kanta=float(kanta)
+korkeus=float(korkeus)
+pinta_ala = (kanta * korkeus )
+print("Tässä on pinta-alasi: ", pinta_ala)
+piiri = 2 * (kanta + korkeus)
+print("tässä on piirisi: ", piiri)

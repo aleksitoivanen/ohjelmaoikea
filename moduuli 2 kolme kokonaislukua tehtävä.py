@@ -1,0 +1,12 @@
+a=input("syötä kokonaisluku: ")
+b=input("syötä toinen kokonaisluku: ")
+c=input("syötä kolmas kokonaisluku: ")
+a=int(a)
+b=int(b)
+c=int(c)
+summa = (a+b+c)
+tulo = (a*b*c)
+keskiarvo = 3 / summa
+print("summa: ",summa)
+print("tulo: ",tulo)
+print("keskiarvo: ",keskiarvo)
