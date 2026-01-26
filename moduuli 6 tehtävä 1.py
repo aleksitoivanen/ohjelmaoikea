@@ -6,5 +6,3 @@ while silmaluku != 6:
     silmaluku=noppa()
     print(silmaluku)
 
-
-print(silmaluku)
