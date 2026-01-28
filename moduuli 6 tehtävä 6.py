@@ -14,11 +14,11 @@ loppu=0
 halkaisija = float(input("syötä pizzan halkaisija: "))
 hinta = float(input("Syötä pizzan hinta: "))
 laskin(halkaisija, hinta, sade, loppu)
-eka=laskin(loppu)
+eka=laskin(halkaisija, hinta, sade,loppu)
 halkaisija2 = float(input("syötä pizzan halkaisija: "))
 hinta2 = float(input("Syötä pizzan hinta: "))
 laskin(halkaisija, hinta, sade, loppu)
-toka=laskin(loppu)
+toka=laskin(halkaisija, hinta,sade,loppu)
 kumpi(eka, toka)
 paras=kumpi(eka,toka)
 
