@@ -1,7 +1,8 @@
 import math
 def laskin(halkaisija, hinta, sade, loppu):
     sade = halkaisija / 2
-    loppu = hinta/(math.pi*sade**2)
+    loppu = 100/hinta/(math.pi*sade**2)
+
     return loppu
 def kumpi(eka, toka):
     if eka>toka:
@@ -17,12 +18,15 @@ laskin(halkaisija, hinta, sade, loppu)
 eka=laskin(halkaisija, hinta, sade,loppu)
 halkaisija2 = float(input("syötä pizzan halkaisija: "))
 hinta2 = float(input("Syötä pizzan hinta: "))
+
 laskin(halkaisija, hinta, sade, loppu)
 toka=laskin(halkaisija, hinta,sade,loppu)
+
 kumpi(eka, toka)
+
 paras=kumpi(eka,toka)
 
-print("parempi pizza: ", paras)
+print("parempi pizza: ", paras, "€")
 
 
 
