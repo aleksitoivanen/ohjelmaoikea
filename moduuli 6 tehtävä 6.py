@@ -14,19 +14,20 @@ sade=0
 loppu=0
 halkaisija = float(input("syötä pizzan halkaisija: "))
 hinta = float(input("Syötä pizzan hinta: "))
-laskin(halkaisija, hinta, sade, loppu)
 eka=laskin(halkaisija, hinta, sade,loppu)
+
 halkaisija2 = float(input("syötä pizzan halkaisija: "))
 hinta2 = float(input("Syötä pizzan hinta: "))
 
-laskin(halkaisija, hinta, sade, loppu)
-toka=laskin(halkaisija, hinta,sade,loppu)
-
-kumpi(eka, toka)
+toka=laskin(halkaisija2, hinta2,sade,loppu)
 
 paras=kumpi(eka,toka)
 
-print("parempi pizza: ", paras, "€")
+if eka<toka :
+    print("ensimmäinen pizza on edullisempi, yksikköhinta:",eka, "€")
+else:
+    print("toinen pizza on edullisempi, yksikköhinta:" ,toka, "€")
+
 
 
 
