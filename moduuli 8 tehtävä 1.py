@@ -24,6 +24,6 @@ yhteys = mysql.connector.connect(
          autocommit=True
          )
 
-kysely = input("syötä ICAO-koodi: ")
+kysely = input("syötä ICAO-koodii: ")
 hae_icao(kysely)
 
