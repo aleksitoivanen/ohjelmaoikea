@@ -1,14 +1,20 @@
 import mysql.connector
 
 def hae_icao(iso_country):
-    sql = f"SELECT iso_country, type from airport where airport.iso_country = country.iso_country and country.iso_country ='{ident}'"
+    sql = f"SELECT type, count(*) from airport where iso_country = '{iso_country}' group by type"
     print(sql)
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
-    if kursori.rowcount >0 :
+    if len(tulos) >0 :
+        print(f"lentokentät maassa {iso_country}:")
         for rivi in tulos:
-            print(f"Maa, jonka on ICAO_koodi on {ident}. Lentokentän nimi on: {rivi [0]}. Kunnassa : {rivi[1]} .")
+            kentta_tyyppi = rivi[0]
+            maara = rivi[1]
+            print(f"{kentta_tyyppi}: {maara} kps")
+    else:
+        print("ei oikea maakoodi")
+
     return
 
 
@@ -24,5 +30,5 @@ yhteys = mysql.connector.connect(
          autocommit=True
          )
 
-kysely = input("syötä Maa-koodii: ")
+kysely = input("syötä Maakoodi: ")
 hae_icao(kysely)
