@@ -7,7 +7,7 @@ if (numero < 2) {
 }
 
 for (let i = 2; 9 < numero; i++) {
-    if (n % i === 0) {
+    if (numero % i === 0) {
         alkulu = false;
         break;
     }
