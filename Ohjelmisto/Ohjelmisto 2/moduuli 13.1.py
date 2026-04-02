@@ -10,7 +10,7 @@ def alkuluku(luku):
         if luku <= 1:
             vastaus = {
                 "status" : tilakoodi,
-                "Teksti" : f"{luku} ei ole alkuluku"
+                "Teksti" : f"{luku} ei ole Alkuluku"
             }
         else:
             on_alkuluku = True
