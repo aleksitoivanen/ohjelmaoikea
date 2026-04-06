@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+<script>
+
+     numerot = []
+     let numero = 0
+
+
+     do {
+
+         numero = Number(prompt("Anna numero"))
+         if (numerot.includes(numero)) break;
+         else numerot.push(numero)
+     } while (true);
+
+
+    numerot.sort((a, b) => a - b);
+
+    console.log("Numerot pienimmästä suurimpaan:");
+    for (let i = 0; i < numerot.length; i++) {
+        console.log(numerot[i]);
+
+    }
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<h2>Tehtävä 4</h2>
+<script>
+    let numerot = [];
+    let syote;
+
+    do {
+        syote = Number(prompt("Anna numero (0 lopettaa ohjelma"));
+        if (syote !== 0)  {
+            numerot.push(syote);
+
+        }
+    } while (syote !== 0);
+    numerot.sort(function (a,b) {
+        return b - a;
+    })
+    console.log("Numerot suurimmasta pienimpään:");
+    for (let i = 0; i < numerot.length; i++) {
+        console.log(numerot[i]);
+    }
+
+</script>
+
+</body>
+</html>

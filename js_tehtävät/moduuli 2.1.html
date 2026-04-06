@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 1</title>
+</head>
+<body>
+<h2>Syötä viisi numeroa</h2>
+<button onclick="kysyNumerot()">Aloita</button>
+
+<script>
+    function kysyNumerot() {
+        let numerot = [];
+        for (let i = 0; i<5; i++) {
+            let luku = Number(prompt("Anna numero" + (i+1) + ":"));
+            numerot.push(luku);
+
+        }
+        let tulostus = "numerot oikeasa järjestykssä:<br>";
+        for (let i =numerot-length - 1; i >= 0; i--) {
+            tulostus += numerot[i] + "<br>";
+        }
+        console.log("Numerot käänteisessä järjestyksessä:");
+for (let i = numerot.length - 1; i >= 0; i--) {
+    console.log(numerot[i]);
+}
+    }
+
+</script>
+</body>
+</html>
